@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+
+    <title>Shopping Website</title>
+</head>
+
+<body>
+    <main class="max-w-7xl mx-5 md:mx-8 lg:mx-auto">
+        <h1 class="font-bold text-6xl text-center my-10">Baap er Hoteeel!!!</h1>
+        <!-- Products -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+
+            <!-- Card -->
+            <div class="drop-shadow-xl bg-white p-5 rounded-lg w-full">
+                <div>
+                    <img class="w-full h-96 object-cover rounded-md mb-8"
+                        src="./images/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="">
+                </div>
+                <h2 class="font-bold text-3xl">Extra large Pizza</h2>
+                <h4 class="font-semibold text-xl mt-1 mb-3">Price: $<span>99</span></h4>
+                <button class="p-5 w-full bg-orange-400 hover:bg-orange-500 rounded-md font-semibold text-xl"
+                    onclick="">Buy
+                    Now</button>
+            </div>
+
+            <!-- Card -->
+            <div class="drop-shadow-xl bg-white p-5 rounded-lg w-full">
+                <div>
+                    <img class="w-full h-96 object-cover rounded-md mb-8" src="./images/pexels-rajesh-tp-1633559.jpg"
+                        alt="">
+                </div>
+                <h2 class="font-bold text-3xl">Hamburger</h2>
+                <h4 class="font-semibold text-xl mt-1 mb-3">Price: $<span>69</span></h4>
+                <button class="p-5 w-full bg-orange-400 hover:bg-orange-500 rounded-md font-semibold text-xl"
+                    onclick="">Buy
+                    Now</button>
+            </div>
+
+            <!-- Card -->
+            <div class="drop-shadow-xl bg-white p-5 rounded-lg w-full">
+                <div>
+                    <img class="w-full h-96 object-cover rounded-md mb-8" src="./images/pexels-rajesh-tp-1633572.jpg"
+                        alt="">
+                </div>
+                <h2 class="font-bold text-3xl">Special Burger</h2>
+                <h4 class="font-semibold text-xl mt-1 mb-3">Price: $<span>49</span></h4>
+                <button class="p-5 w-full bg-orange-400 hover:bg-orange-500 rounded-md font-semibold text-xl"
+                    onclick="">Buy
+                    Now</button>
+            </div>
+
+            <!-- Card -->
+            <div class="drop-shadow-xl bg-white p-5 rounded-lg w-full">
+                <div>
+                    <img class="w-full h-96 object-cover rounded-md mb-8" src="./images/burger.png" alt="">
+                </div>
+                <h2 class="font-bold text-3xl">Crusty Crab</h2>
+                <h4 class="font-semibold text-xl mt-1 mb-3">Price: $<span>39</span></h4>
+                <button class="p-5 w-full bg-orange-400 hover:bg-orange-500 rounded-md font-semibold text-xl"
+                    onclick="">Buy
+                    Now</button>
+            </div>
+
+            <!-- Card -->
+            <div class="drop-shadow-xl bg-white p-5 rounded-lg w-full">
+                <div>
+                    <img class="w-full h-96 object-cover rounded-md mb-8" src="./images/pngegg.png" alt="">
+                </div>
+                <h2 class="font-bold text-3xl">Fresh Tomato</h2>
+                <h4 class="font-semibold text-xl mt-1 mb-3">Price: $<span>10</span></h4>
+                <button class="p-5 w-full bg-orange-400 hover:bg-orange-500 rounded-md font-semibold text-xl"
+                    onclick="">Buy
+                    Now</button>
+            </div>
+
+            <!-- Card -->
+            <div class="drop-shadow-xl bg-white p-5 rounded-lg w-full">
+                <div>
+                    <img class="w-full h-96 object-cover rounded-md mb-8"
+                        src="./images/—Pngtree—lemon lemon slices summer summer_3929095.png" alt="">
+                </div>
+                <h2 class="font-bold text-3xl">Salads</h2>
+                <h4 class="font-semibold text-xl mt-1 mb-3">Price: $<span>20</span></h4>
+                <button class="p-5 w-full bg-orange-400 hover:bg-orange-500 rounded-md font-semibold text-xl"
+                    onclick="">Buy
+                    Now</button>
+            </div>
+
+        </div>
+
+        <!-- Cart -->
+        <div>
+            <h2 class="font-bold text-2xl my-8">Cart Items</h2>
+            <div class="flex items-center justify-between bg-orange-400 p-5 rounded-md mb-2">
+                <h3 id="product-name" class="font-bold text-xl">Name</h3>
+                <h3 id="product-quantity" class="font-bold text-xl">Quantity</h3>
+                <h3 id="product-price" class="font-bold text-xl">Price</h3>
+            </div>
+            <div class="flex items-center justify-between bg-orange-50 p-5 rounded-md mb-2">
+                <h3 id="product-name" class="font-semibold text-xl">Name</h3>
+                <h3 id="product-quantity" class="font-semibold text-xl">Quantity</h3>
+                <h3 id="product-price" class="font-semibold text-xl">Price</h3>
+            </div>
+            <div class="flex items-center justify-between bg-lime-200 p-5 rounded-md mb-2">
+                <h3 id="product-name" class="font-bold text-xl">Total</h3>
+                <!-- <h3 id="product-quantity" class="font-bold text-xl">Quantity</h3> -->
+                <h3 id="product-price" class="font-bold text-xl">$<span>500.00</span></h3>
+            </div>
+            <div class="flex items-center justify-between bg-orange-300 p-5 rounded-md mb-2">
+                <h3 id="product-name" class="font-bold text-xl">Coupon</h3>
+                <!-- <h3 id="product-quantity" class="font-bold text-xl">Quantity</h3> -->
+                <div>
+                    <input type="text" name="" id="coupon" class="p-2 rounded-md">
+                    <button id="coupon-btn"
+                        class="bg-blue-500 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-bold">Apply</button>
+                </div>
+                <h3 id="product-price" class="font-bold text-xl">$<span id="total-price">500.00</span></h3>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./scripts/cart.js"></script>
+</body>
+
+</html>
